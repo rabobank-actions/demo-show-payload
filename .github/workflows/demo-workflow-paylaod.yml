@@ -1,0 +1,14 @@
+name: Demo Payload
+run-name: Demo payload
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  show-payload:
+    name: Show the github payload
+    runs-on: ubuntu-latest
+    steps:
+      - uses: rabobank-actions/demo-show-payload@v1.0.0
