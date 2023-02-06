@@ -2,11 +2,11 @@ name: Demo Payload
 run-name: Demo payload
 
 on:
-  - workflow_dispatch
-  - issues:
+  workflow_dispatch:
+  issues:
       types:
         - opened
-  - push:
+  push:
       branches:
         - main
 
